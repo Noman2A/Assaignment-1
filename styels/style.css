@@ -132,6 +132,7 @@ section.section-two {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-bottom: 48px;
 }
 
 .section-two-child p {
@@ -164,9 +165,10 @@ section.section-two {
     padding-top: 48px;
 }
 
+/* --- section-three --- */
 section.section-three {
     width: 100%;
-    padding-top: 50px;
+    margin-top: 120px;
 }
 
 .section-three-child {
@@ -174,6 +176,18 @@ section.section-three {
     border-radius: 16px;
     overflow: hidden;
 }
+
+.section-three-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%);
+    z-index: 1;
+}
+
 
 .section-three-child::after {
     content: "";
@@ -200,17 +214,6 @@ section.section-three {
     padding-top: 70px;
     position: relative;
     z-index: 11;
-}
-
-.section-three-child::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%);
-    z-index: 1;
 }
 
 .section-three-child h1 {
@@ -273,6 +276,7 @@ section.section-three {
     bottom: 50px;
 }
 
+/* --- section-four --- */
 section.section-four {
     width: 100%;
     padding-top: 120px;
@@ -369,7 +373,7 @@ section.section-four {
 /* --- section-six --- */
 .section-six {
     width: 100%;
-    margin-top: 120px;
+    margin-block: 120px;
 }
 
 .section-six-child {
@@ -467,11 +471,10 @@ section.section-four {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .section-seven-child-left h3 {
-    color: #F00;
+    color: #f00;
     font-family: "Inter", sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -479,7 +482,6 @@ section.section-four {
     line-height: normal;
     padding-bottom: 16px;
 }
-
 
 .section-seven-child-left h1 {
     color: #070211;
@@ -493,7 +495,7 @@ section.section-four {
 }
 
 .section-seven-child-left p {
-    color: rgba(7, 2, 17, 0.60);
+    color: rgba(7, 2, 17, 0.6);
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -502,33 +504,32 @@ section.section-four {
     max-width: 393px;
 }
 
-.section-seven-child-middle img{
+.section-seven-child-middle img {
     width: 364.844px;
     height: 364.844px;
     border-radius: 50%;
     border: 21px solid #fff;
     border-radius: 50%;
-    outline: 12px solid #F00;
+    outline: 12px solid #f00;
 }
-
 
 .section-seven-child-right {
     max-width: 276px;
     width: 100%;
 }
 
-.section-seven-child-right h1{
-    color: #F00;
+.section-seven-child-right h1 {
+    color: #f00;
     font-family: "Inter", sans-serif;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding-bottom: 12px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 12px;
 }
 
-.section-seven-child-right p{
-    color: rgba(7, 2, 17, 0.60);
+.section-seven-child-right p {
+    color: rgba(7, 2, 17, 0.6);
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -537,9 +538,96 @@ padding-bottom: 12px;
     line-height: 32px;
 }
 
-.section-seven-child-right img{
-  max-width: 140px;
-  width: 100%;
+.section-seven-child-right img {
+    max-width: 140px;
+    width: 100%;
+}
+
+/* --- section-eight --- */
+.section-eight {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.section-eight-child {
+    position: relative;
+}
+
+.section-eight-child-text h4 {
+    color: #070211;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.section-eight-child-text h1 {
+    color: #f00;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.section-eight-child-text p {
+    color: rgba(7, 2, 17, 0.6);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 1068px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.section-eight-child-text h1 span {
+    color: #070211;
+}
+
+.section-eight-child-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section-eight-child-top img.eight-child-top-first {
+    max-width: 429px;
+}
+
+.section-eight-child-top img.sec-eight-discount {
+    width: 277px;
+    height: 277px;
+    position: absolute;
+    top: 56%;
+    right: 23%;
+    transform: translateY(-50%);
+}
+
+.section-eight-child-bottom {
+    height: 229px;
+    border-radius: 16px 0px 16px 16px;
+    background: #f00;
+    position: relative;
+    width: 100%;
+}
+
+.section-eight-child-bottom img {
+    max-width: 596px;
+    width: 100%;
+    position: absolute;
+    bottom: 27%;
+    left: 5%;
+    background-color: transparent;
 }
 
 /* --- footer --- */
@@ -556,7 +644,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .footer-main-child-top p {
@@ -587,11 +674,10 @@ footer {
 .footer-main-child-top ul li img {
     width: 24px;
     height: 24px;
-
 }
 
 .footer-main-child-top ul li span {
-    color: #FFF;
+    color: #fff;
     font-family: "Inter", sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -625,7 +711,7 @@ footer {
 
 .footer-main-child-bottom p,
 .footer-main-child-bottom button {
-    color: #FFF;
+    color: #fff;
     font-family: "Inter", sans-serif;
     font-size: 24px;
     font-style: normal;
